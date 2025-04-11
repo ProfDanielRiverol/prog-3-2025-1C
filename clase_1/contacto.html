@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contacto</title>
+    <style>
+      /* comentario en css */
+      /* selectores
+      1-tag */
+
+      /* h1{
+        color:white;
+        background-color: grey;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Mi página de <span>inicio</span></h1>
+      <nav>
+        <ul>
+          <li><a href="./">Inicio</a></li>
+          <li><a href="./ejemplo.html">Ejemplo</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section-form">
+        <h3 class="titulo-form">Formulario de contacto</h3>
+      <form action="">
+        <input type="text" value="12345677889" disabled>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Juan Perez" minlength="3" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" 
+        placeholder="example@mail.com" required/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <label for="re-password">Reingresar Password:</label>
+        <input type="password" id="re-password" name="re-password" />
+        <label for="date">Fecha de nacimiento:</label>
+        <input type="date" id="date" name="date" />
+        <label for="number">Edad:</label>
+        <input type="number" id="number" name="number" min="0" max="10"/>
+
+        <label for="agree">Aceptar terminos y condiciones</label>
+        <input type="checkbox" id="agree" name="agree" required />
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message"></textarea>
+        <!-- boton -->
+        <!-- <input type="submit" value="Enviar" /> -->
+        <!-- <input type="submit" /> -->
+         <button type="submit">Enviar</button>
+         <button type="reset">Cancelar</button>
+      </form>
+    </section>
+  </body>
+</html>

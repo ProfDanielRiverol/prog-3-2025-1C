@@ -1,0 +1,52 @@
+/* selector de etiqueta */
+h1 {
+  color: white;
+  background-color: grey;
+}
+p {
+  color: cornflowerblue;
+   border: 25px solid !important;
+}
+span {
+  text-transform: capitalize;
+  color: red;
+  font-style: italic;
+}
+h2{
+    font-size: 45px;
+}
+#parrafo-destacado{
+    border: 1px solid;
+}
+/* selector de clase */
+.titulo{
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: transparent;
+    color: black;
+    border: 10px solid;
+}
+.secundario{
+    background-color: green;
+}
+/* ul{
+    background: blue;
+}
+ul{
+    background: red;
+} */
+/* especificidad */
+/* 33 de mano */
+h3.titulo-form{
+    font-style: italic;
+}
+/* 28 */
+h3{
+    font-size: 38px;
+}
+/* 25 */
+.titulo-form{
+    color: grey;
+}
+ul h3{
+    text-transform: uppercase;
+}

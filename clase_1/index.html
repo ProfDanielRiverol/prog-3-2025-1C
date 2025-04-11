@@ -1,38 +1,58 @@
+<!-- html 5 -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="./css/style.css">
     <title>Home</title>
-    <style>
-      h1{
-        background-color: #222;
-        width: 30rem;
-      margin: 50px;}
+    <link rel="stylesheet" href="./css/style.css"><style>
+      /* comentario en css */
+      /* selectores
+      1-tag */
+
+      /* h1{
+        color:white;
+        background-color: grey;
+      }
+      p{
+        color: cornflowerblue;
+      }
+      span{
+        text-transform: capitalize;
+        color: red;
+        font-style: italic;
+      } */
+       /* h2{
+        font-size: 30px;
+       } */
     </style>
+    <!--  -->
   </head>
   <body>
-   <header>
-       <h1>Mi página de inicio</h1>
-     <nav>
-      <ul>
-        <li><a href="./">Inicio</a></li>
-        <li><a href="./ejemplo.html">Ejemplo</a></li>
-      </ul>
-    </nav>
-   </header>
-    <p>Mi texto informativo</p>
+    <header>
+      <h1 class="titulo">Mi página de <span>inicio</span></h1>
+      <nav>
+        <ul>
+          <li><a href="./">Inicio</a></li>
+          <li><a href="./ejemplo.html">Ejemplo</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p id="parrafo-destacado" class="titulo">Mi texto informativo</p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum earum
-      <b>Negrita</b> <strong>Lorem ipsum dolor sit.</strong> voluptatibus
-      nostrum aliquam ullam et esse illo reprehenderit officiis, rem ipsa
+      <span>LOREM IPSUM </span> dolor sit amet consectetur adipisicing elit.
+      Rerum <span>e</span>arum <b>Negrita</b>
+      <strong>Lorem ipsum dolor sit.</strong> voluptatibus nostrum aliquam ullam
+      et esse illo reprehenderit officiis, rem ipsa
       <i>Cursiva</i>
       consequatur
       <em>Enfasis</em> possimus provident aliquid impedit placeat exercitationem
       tempore blanditiis!
     </p>
-    <h2>Listas</h2>
+    <!-- <h2 style=" color: blue; background-color: yellow;">Listas</h2> -->
+     <h2 class="titulo secundario">Listas</h2>
     <h3>Lista ordenada</h3>
     <!-- <p>Lista ordenada</p> -->
     <h4>Condiciones de aporbacion</h4>
@@ -45,9 +65,9 @@
 
     <h3>Listas desordenadas</h3>
     <h4>Lista de compras</h4>
-    <ul>
+    <ul class="">
+      <h3>Vegetales</h3>
       <li>
-        <h5>Vegetales</h5>
         <ol>
           <li>Zapallito</li>
           <li>Lechuga</li>
@@ -60,7 +80,7 @@
       <li>Salsa de tomate</li>
     </ul>
 
-    <h2>RUTAS</h2>
+    <h2 class="secundario">RUTAS</h2>
     <ul>
       <li>Rutas absolutas</li>
       <li>Rutas relativas</li>
@@ -73,6 +93,10 @@
     <!-- /Users/mac/Documents/Progra3-2025/assets/video/programming.mp4
     /Users/mac/Documents/Progra3-2025/assets/img/programming.jpg -->
     <h4>Insertar imagen</h4>
+    <img
+      src="./assets/img/programming.jpg"
+      alt="Imagen de una computadora"
+      width="300" />
     <img
       src="./assets/img/programming.jpg"
       alt="Imagen de una computadora"
@@ -100,22 +124,20 @@
       <p>Lorem ipsum dolor sit.</p>
     </div>
     <div class="nav"></div>
-    <div class="header"></div>  
-<footer>
-    &COPY;2025
-</footer>
+    <div class="header"></div>
+    <footer>&COPY;2025</footer>
 
-
-<section>
-    <header>
+    <section id="">
+      <header>
         <h3>Titulo post</h3>
-    </header>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, pariatur.</p>
+      </header>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+          pariatur.
+        </p>
+      </section>
+      <footer>04/04/25</footer>
     </section>
-    <footer>
-        04/04/25
-    </footer>
-</section>
   </body>
 </html>
