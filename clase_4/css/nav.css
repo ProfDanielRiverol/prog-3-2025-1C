@@ -1,0 +1,71 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.home {
+  background-color: rgb(221, 209, 205);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  background-color: rgb(156, 231, 231);
+}
+
+.contact {
+  background-color: rgb(184, 243, 125);
+}
+
+.project {
+  background-color: rgb(233, 175, 175);
+}
+@media (min-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(38, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .nav .content {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+  }
+
+  .nav a:hover {
+    color: rgb(136, 198, 255);
+  }
+
+  .nav .logo {
+    font-size: 3rem;
+    padding: 10px;
+  }
+}

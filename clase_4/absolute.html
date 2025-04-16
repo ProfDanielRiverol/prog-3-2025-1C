@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Archivos de estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/position-abs.css" />
+    <title>Position Absolute</title>
+  </head>
+  <body>
+    <!-- Un position absolute necesita un elemento padre relative o usara el viewport en su lugar-->
+    <!-- Padre relativo-->
+    <section class="box">
+      1
+      <div class="content absolute top-left"></div>
+      <div class="content absolute top-right"></div>
+      <div class="content absolute bottom-left"></div>
+    </section>
+
+    <section id="box-2" class="box">2</section>
+
+    <!-- Padre static-->
+    <section class="box static">
+      <div class="content absolute "></div>
+      3
+      <div id="box-3" class="content absolute"></div>
+    </section>
+  </body>
+</html>

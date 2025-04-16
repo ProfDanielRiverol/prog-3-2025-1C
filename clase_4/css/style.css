@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid #3d3d3d;
+  border-radius: 15px;
+  background-color: hsl(342, 70%, 81%);
+  margin: 1rem auto;
+}
+
+.relative {
+  background-color: hsl(113, 71%, 80%);
+}
+
+.content {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #3d3d3d;
+  border-radius: 15px;
+  background-color: hsl(263, 76%, 72%);
+}
