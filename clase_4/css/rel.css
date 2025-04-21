@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+}
+
+.border {
+  border: 2px dashed #b950ff;
+  padding: 2px;
+}
+
+.btn-magic {
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  padding: 10px 20px;
+  background: #6200ee;
+  color: white;
+  font-size: 16px;
+  border: none;
+  transition: top 0.3s ease;
+}
+
+.btn-magic:hover {
+  top: -5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

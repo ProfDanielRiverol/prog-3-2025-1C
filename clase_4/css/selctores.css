@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100px;
+  padding: 20px;
+  margin: 40px;
+  border: 30px solid #000;
+  outline: 40px solid red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: cadetblue;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #79817f;
+}
+
+tr td:hover {
+  background-color: #9da8a4;
+  color: white;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #79817fa4;
+}
+
+.box {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.link {
+  margin: 15px;
+  padding: 5px;
+  font-size: xx-large;
+  text-decoration: none;
+  color: blue;
+}
+
+.link:hover {
+  outline: 3px dashed;
+}
+
+input {
+  padding: 10px;
+  font-size: medium;
+  border: 1px solid #79817f;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: rgba(0, 255, 255, 0.589);
+  outline: 2px solid rgb(54, 119, 238);
+}
+
+/* 
+p {
+  font-size: larger;
+  color: rgb(72, 13, 235);
+}
+
+div P:nth-child(odd) {
+  
+}
+
+div p:nth-child(even) {
+  background-color: rgb(241, 113, 113);
+}
+
+div p:nth-child(2) {
+  color: white;
+  background-color: chocolate;
+} */
+
+
+span {
+  margin: 10px;
+}
+
+div:first-child {
+  background-color: cadetblue;
+}
+
+#box1 :first-child {
+  background-color: cadetblue;
+}
+
+
+div.content > p{
+  color: white;
+  background-color: #000;
+}
+
+h3 + p{
+  background-color: green;
+}
+
+h4 ~ p {
+  background-color: coral;
+}
