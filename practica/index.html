@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logos/logo1.svg"
+      type="image/svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logos/logo1.svg"
+      type="image/svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logos/logo116.png"
+      type="image/png"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logos/logo124.png"
+      type="image/png"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logos/logo132.png"
+      type="image/png"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>JourneyHaven</title>
+  </head>
+  <body>
+    <nav class="navegacion">
+      <div class="logo__container">
+        <img
+          src="./assets/img/logos/logo1.svg"
+          alt="Logotipo JourneyHaven"
+          class="logo"
+        />
+        <span>journeyhaven</span>
+      </div>
+      
+      <input type="checkbox" id="check__menu" />
+      <ul class="navegacion__nav">
+        <li class="nav__item active">
+          <a href="">
+            <i class="bx bx-home"></i>
+            Inicio
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="">
+            <i class="bx bx-hotel"></i>
+            Hoteles
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="">
+            <i class="bx bx-car"></i>
+            Alquiler de autos
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="">
+            <i class="bx bx-briefcase-alt"></i>
+            Paquetes
+          </a>
+        </li>
+      </ul>
+      <!-- Nav mobile -->
+      
+      <label for="check__menu">
+        <i class="bx bx-menu"></i>
+      </label>
+  
+    <!-- Fin Nav mobile -->
+    </nav>
+    <header class="header__container">
+      <video autoplay loop muted>
+        <source src="./assets/video/video_banner4.mp4" type="video/mp4" />
+      </video>
+      <div class="capa"></div>
+      <!-- Container left -->
+      <div class="form_container">
+        <h2>Busca tu paquete</h2>
+        <form action="">
+          <div class="form__control">
+            <label for="">Elige tu destino</label>
+            <input type="text" placeholder="Paris, Francia" />
+          </div>
+          <div class="form__control row">
+            <label for="">Salida</label>
+            <input type="date" name="" id="" />
+            <label for="">Retorno</label>
+            <input type="date" name="" id="" />
+            <div>
+              <input type="checkbox" id="check_decision" />
+              <label for="check_decision">No lo sé aún</label>
+            </div>
+          </div>
+          <p>Cantidad de personas</p>
+          <div class="form__control row">
+            <label for="adulto">Adultos</label>
+            <select name="" id="adulto">
+              <option value="1">1 adulto</option>
+              <option value="2">2 adultos</option>
+              <option value="3">3 adultos</option>
+              <option value="4">4 adultos</option>
+              <option value="5">5 adultos</option>
+            </select>
+            <label for="menor">Menores (12 años)</label>
+            <select name="" id="menor">
+              <option value="1">1 menor</option>
+              <option value="2">2 menores</option>
+              <option value="3">3 menores</option>
+              <option value="4">4 menores</option>
+              <option value="5">5 menores</option>
+            </select>
+            <div>
+              <input type="checkbox" id="check_habitaciones" />
+              <label for="check_habitaciones">Habitaciones separadas</label>
+            </div>
+          </div>
+          <div class="form__control">
+            <input class="boton boton-submit" type="submit" value="Buscar" />
+          </div>
+        </form>
+      </div>
+      <!-- container rigth -->
+      <section class="container__titles">
+        <h2>¡Aventura!</h2>
+        <h4>Recorre la Amazonia</h4>
+        <p>
+          Descubre la selva tropical más diversa del mundo mientras navegas por
+          el majestuoso río Amazonas y te maravillas con su exuberante
+          biodiversidad.
+        </p>
+        <a href="#" class="boton boton_descubrir">Descubre</a>
+      </section>
+    </header>
+    <!-- Sección Empresa -->
+    <section class="empresa">
+      <div class="empresa__description">
+        <h4>Bienvenidos a</h4>
+        <h1>j<img src="./assets/img/logos/logo4.svg" alt="o" />urneyhaven</h1>
+        <h3>Descubre el mundo a lo grande</h3>
+        <p>
+          En Journey Haven, estamos dedicados a llevar tus sueños de viaje a la
+          realidad. Nuestro equipo de apasionados viajeros y expertos en
+          destinos está listo para crear una experiencia inolvidable para ti. Ya
+          sea que busques sumergirte en la cultura local, explorar paisajes
+          impresionantes o simplemente relajarte en un paraíso tropical,
+          ¡nosotros lo tenemos cubierto!
+        </p>
+      </div>
+      <div class="image__description"></div>
+    </section>
+    <!-- Fin Sección Empresa -->
+    <!-- Sección Destinos -->
+    <section class="destinos">
+      <h2>Nuestros Destinos</h2>
+      <section class="destinos_container">
+        <div class="card">
+          <img
+            src="./assets/img/travels/santorini.jpg"
+            alt="Vista de la cuidad de Santorini, Grecia"
+            class="card_img"
+          />
+          <div class="card_title">
+            <h4>Santorini, Grecia</h4>
+            <h5>"Un joya en el mar Egeo"</h5>
+          </div>
+          <div class="card_container">
+            <p>
+              Descubre la deslumbrante belleza de Santorini, con sus icónicas
+              casas blancas de cúpulas azules enclavadas en acantilados
+              volcánicos...
+            </p>
+            <a href="" class="boton boton_descubrir">Descubre</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/img/travels/florencia-italia.jpg"
+            alt="Vista de la cuidad de Florencia, Italia"
+            class="card_img"
+          />
+          <div class="card_title">
+            <h4>Florencia, Italia</h4>
+            <h5>"El Renacimiento en cada esquina"</h5>
+          </div>
+          <div class="card_container">
+            <p>
+              Sumérgete en la cuna del Renacimiento. Admira obras de arte
+              maestras, como el David de Miguel Ángel y el Duomo de
+              Brunelleschi...
+            </p>
+            <a href="" class="boton boton_descubrir">Descubre</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/img/travels/petra-jordania.jpg"
+            alt="Vista de la cuidad de Petra, Jordania"
+            class="card_img"
+          />
+          <div class="card_title">
+            <h4>Petra, Jordania</h4>
+            <h5>"La ciudad rosada escondida"</h5>
+          </div>
+          <div class="card_container">
+            <p>
+              Descubre la majestuosidad de Petra, la antigua ciudad tallada en
+              piedra rojiza. Pasea por el desfiladero de Siq y déjate
+              sorprender...
+            </p>
+            <a href="" class="boton boton_descubrir">Descubre</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/img/travels/rio-brasil.jpg"
+            alt="Vista de Rio de Janeiro, Brasil"
+            class="card_img"
+          />
+          <div class="card_title">
+            <h4>Rio de Janeiro, Brasil</h4>
+            <h5>"Maravilla carioca"</h5>
+          </div>
+          <div class="card_container">
+            <p>
+              Siente la emoción contagiosa de Rio, conocida por su carnaval
+              colorido y playas icónicas. Sube al Cristo Redentor para disfrutar
+              de vistas panorámicas...
+            </p>
+            <a href="" class="boton boton_descubrir">Descubre</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/img/travels/buenos-aires-argentina.jpg"
+            alt="Vista de la cuidad de Buenos Aires"
+            class="card_img"
+          />
+          <div class="card_title">
+            <h4>Buenos Aires, Argentina</h4>
+            <h5>"Tango y pasión"</h5>
+          </div>
+          <div class="card_container">
+            <p>
+              Vive la pasión del tango en Buenos Aires, una ciudad que combina
+              elegancia europea con un corazón latino vibrante...
+            </p>
+            <a href="" class="boton boton_descubrir">Descubre</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/img/travels/vancouver-canada.jpg"
+            alt="Imagen del Rio amazonas"
+            class="card_img"
+          />
+          <div class="card_title">
+            <h4>Vancouver, Canadá</h4>
+            <h5>"Un paraíso natural en la costa oeste"</h5>
+          </div>
+          <div class="card_container">
+            <p>
+              Admira la impresionante belleza de Vancouver, rodeada de montañas,
+              bosques y el océano Pacífico. Con una mezcla de modernidad y
+              naturaleza...
+            </p>
+            <a href="" class="boton boton_descubrir">Descubre</a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Fin Sección Destinos -->
+    <!-- Sección Explora-->
+    <section class="explora">
+      <h2>Explora</h2>
+      <div class="explora__container">
+        <div class="card_explora">
+          <a href="#">
+            <img src="./assets/img/travels/europa.jpg" alt="Imagen de Europa" />
+            <p>Europa</p>
+          </a>
+        </div>
+        <div class="card_explora">
+          <a href="#">
+            <img
+              src="./assets/img/travels/america.jpg"
+              alt="Imagen de América"
+            />
+            <p>América</p>
+          </a>
+        </div>
+        <div class="card_explora">
+          <a href="#">
+            <img src="./assets/img/travels/asia.jpg" alt="Imagen de Asia" />
+            <p>Asia</p>
+          </a>
+        </div>
+        <div class="card_explora">
+          <a href="#">
+            <img src="./assets/img/travels/africa.jpg" alt="Imagen de África" />
+            <p>África</p>
+          </a>
+        </div>
+        <div class="card_explora">
+          <a href="#">
+            <img src="./assets/img/travels/oceania.jpg" alt="" />
+            <p>Oceanía</p>
+          </a>
+        </div>
+        <div class="card_explora">
+          <a href="#">
+            <img src="./assets/img/brands/qr-code.svg" alt="QR Promociones" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Sección Explora-->
+    <!-- Sección pagos -->
+    <section class="medios_pago">
+      <div class="medios_description">
+        <h2>La manera más cómoda de financiar tus viajes</h2>
+        <p>
+          Queremos asegurarnos de que no te pierdas la oportunidad de vivir tus
+          sueños de viaje. Es por eso que te ofrecemos opciones flexibles de
+          financiamiento para que puedas embarcarte en tu próxima travesía sin
+          preocupaciones.
+        </p>
+        <div class="brands_container">
+          <img src="./assets/img/brands/mercadopago-logo.svg" alt="logo" />
+          <img src="./assets/img/brands/hsbc-logo.svg" alt="logo" />
+          <img src="./assets/img/brands/visa-logo.svg" alt="logo" />
+          <img src="./assets/img/brands/mastercard-logo.svg" alt="logo" />
+          <img src="./assets/img/brands/itau-logo.svg" alt="logo" />
+          <img src="./assets/img/brands/icbc-logo.svg" alt="logo" />
+        </div>
+      </div>
+      <div class="medios_image">
+        <img src="./assets/img/travels/passport.jpg" alt="Manos sosteniendo pasaportes" />
+      </div>
+    </section>
+    <!-- Fin Sección pagos -->
+    <!-- Footer -->
+   <footer>
+    <section class="pie_pagina">
+      <section class="links">
+        <h2>j<img src="./assets/img/logos/logo1.svg" alt="o" />urneyhaven</h2>
+        <ul>
+          <li class="link_item"><a href="#">Inicio</a></li>
+          <li class="link_item"><a href="#">Hoteles</a></li>
+          <li class="link_item"><a href="#">Alquiler de Autos</a></li>
+          <li class="link_item"><a href="#">Paquetes</a></li>
+        </ul>
+      </section>
+      <section class="follow">
+        <h2>Síguenos</h2>
+        <ul>
+          <li class="link_item">
+            <a href="#"><i class="bx bxl-facebook"></i>Facebook</a>
+          </li>
+          <li class="link_item">
+            <a href="#"><i class="bx bxl-instagram"></i>Instagram</a>
+          </li>
+          <li class="link_item">
+            <a href="#"><i class="bx bxl-tiktok"></i>Tik-tok</a>
+          </li>
+          <li class="link_item">
+            <a href="#"><i class="bx bxl-youtube"></i>Youtube</a>
+          </li>
+        </ul>
+      </section>
+      <section class="newsletter">
+        <h2>Suscríbete</h2>
+        <form action="">
+          <input type="email" placeholder="ejemplo@mail.com" />
+          <button class="boton boton_news">Enviar</button>
+        </form>
+        <section class="contacto">
+          <ul>
+            <li class="link_item">Tel: <a href="#">0800-333-viaje</a></li>
+            <li class="link_item">
+              Email: <a href="#">contacto@journeyhaven.com</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <section class="credits">
+     <div class="container__logo"> <a href="#"><img src="./assets/img/logos/Logo DSCW.svg" alt="Logo DCS"></a></div><span>&copy; 2023</span>
+    </section>
+   </footer>
+    <!-- Fin Footer -->
+  </body>
+</html>
