@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  /* color: green; */
+}
+ul {
+  list-style: none;
+}
+.boton {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.boton.boton-submit {
+  background-color: #e4ff33;
+}
+.boton.boton_descubrir {
+  background-color: #e4ff33;
+}
+/* navegacion */
+.navegacion {
+  background-color: #ffffffd9;
+  width: 100%;
+  height: 60px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.navegacion .logo__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo__container .logo {
+  width: 40px;
+  margin-right: 8px;
+}
+.logo__container span {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.navegacion .navegacion__nav {
+  /* background-color: red; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navegacion__nav .nav__item {
+  width: auto;
+  padding: 5px;
+}
+.navegacion__nav .nav__item a {
+  color: initial;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav__item.active {
+  border-bottom: 3px solid #ff6633;
+}
+
+/* menu mobile */
+.navegacion label,
+.navegacion #check__menu {
+  display: none;
+}
+
+/* hero */
+.header__container {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  left: 0;
+  top: 60px;
+}
+.header__container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.capa {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+.form_container,
+.container__titles {
+  width: 35%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  background-color: rgba(255, 102, 51, 0.696);
+  padding: 10px;
+  color: #fff;
+  transform: translateY(-50%);
+}
+.container__titles {
+  width: 55%;
+  left: 40%;
+  background-color: rgba(0, 0, 0, 0.498);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* seccion empresa  */
+.empresa{
+    margin-top: 60px;
+    padding: 10px;
+}
+.empresa__description h1{
+font-size: 1.8rem;
+}
+.empresa__description img{
+    width: 20px;
+}
+.destinos{
+    width: 100%;
+}
+.destinos_container{
+    display: flex;
+    gap: 1rem;
+}
