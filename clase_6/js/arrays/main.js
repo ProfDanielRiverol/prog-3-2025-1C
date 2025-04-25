@@ -146,7 +146,9 @@ let organizado = inventario.reduce((acc, curr) => {
   return acc;
 }, {});
 
+console.log("Juguetes");
 console.table(organizado.juguetes);
+console.log("Deportes");
 console.table(organizado.deportes);
 
 // sort(compareFn?: (a: T, b: T) => number): this;
