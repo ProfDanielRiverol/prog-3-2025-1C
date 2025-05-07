@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TODO List</title>
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+</head>
+<body>
+  <main>
+    <section class="task-wrapper">
+      <h2>Lista de tareas</h2>
+      <form id="task-form" class="task-form" action="#">
+        <input type="text" id="task-input" placeholder="Ingrese una tarea" />
+        <button type="submit">+</button>
+      </form>
+      <ul id="task-list" class="task-list"></ul>
+      <article class="content-pending">
+        <span id="pending-count" class="pending"></span>
+        <button id="clear-tasks" class="clear">Borrar todo</button>
+      </article>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
