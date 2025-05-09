@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding: 2rem;
+}
+
+main section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.libros-contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.libro-card {
+  background-color: #3a3c44;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(45, 83, 187, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.libro-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Título */
+.libro-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #f0f0f0;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+.descripcion {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+  overflow: hidden;
+}
