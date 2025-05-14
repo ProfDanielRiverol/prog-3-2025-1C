@@ -1,65 +1,102 @@
-const list = document.querySelector(".libros-contenedor");
+// console.log('Calentar el agua');
+// console.log('Preparar el mate');
+// console.log('Disfrutar el mate');
 
-const libros = [
-  {
-    titulo: "JavaScript",
-    descripcion:
-      "Uso de Eventos: Implementar eventos como clics, desplazamientos y teclas presionadas para interactuar con el usuario y responder a sus acciones.",
-    isOpen: false,
-  },
-  {
-    titulo: "Java",
-    descripcion:
-      "Uso de Funciones: Desarrollar funciones que realicen tareas específicas, como filtrar datos, mostrar/ocultar información, y actualizar la interfaz de usuario.",
-    isOpen: false,
-  },
-  {
-    titulo: "Python",
-    descripcion:
-      "Trabajo con Arrays y Objetos: Utilizar arrays para manejar listas de datos (por ejemplo, libros o productos), y objetos para almacenar información relacionada (como los",
-    isOpen: false,
-  },
-  {
-    titulo: "1984",
-    descripcion:
-      "Una novela distópica escrita por George Orwell que explora temas como la vigilancia, la opresión y la manipulación de la verdad en una sociedad totalitaria.",
-    isOpen: false,
-  },
-];
+// setTimeout()
+// console.log('primera ejecucion');
 
-function rederLibros() {
-  const fragment = document.createDocumentFragment();
-  libros.forEach((libros) => {
-    fragment.appendChild(crearLibro(libros));
+// setTimeout(()=>{
+//     console.log('segunda ejecucion');
+
+// },0)
+
+// console.log('tercera ejecucion');
+const card = document.querySelector(".card");
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+  setTimeout(() => {
+    card.classList.remove("active");
+  }, 2500);
+  card.classList.add("active");
+});
+// let nota = 7;
+// Promesas 1- pending 2-fulfilled 3-rejected
+const eventoFuturo = (nota) => {
+  return new Promise((resolve, reject) => {
+    //cuerpo de la promesa
+    setTimeout(() => {
+      if (nota >= 7) {
+        resolve("Chocolates para todos/as");
+      } else {
+        reject("Uh que bajon");
+      }
+    }, 3000);
   });
-  list.replaceChildren(fragment);
-}
+};
+//   console.log(eventoFuturo);
+const mensaje = document.querySelector("p#mensaje");
+// eventoFuturo(7)
+// .then((response) => {
+//   console.log(response);
+//   mensaje.textContent = response;
+// }).catch((err)=>{
+//     console.log(err);
+//     mensaje.textContent = err;
+// }).finally(()=>{
+//     console.log('PRoceso terminado');
+// });
+// async y await
 
-function crearLibro(libro) {
-  const libroDiv = document.createElement("div");
-  libroDiv.classList.add("libro-card");
-
-  const titulo = document.createElement("h3");
-  titulo.textContent = libro?.titulo;
-
-  const boton = document.createElement("button");
-  boton.textContent = libro.isOpen ? "Ocultar detalle" : "Ver detalles";
-  boton.addEventListener("click", () => {
-    libro.isOpen = !libro.isOpen;
-    rederLibros();
-  });
-
-  libroDiv.appendChild(titulo);
-  libroDiv.appendChild(boton);
-  if (libro?.isOpen) {
-    const descripcion = document.createElement("p");
-    descripcion.textContent = libro?.descripcion;
-    descripcion.classList.add("descripcion");
-
-    libroDiv.appendChild(descripcion);
+async function aprobacionDeCursada(nota) {
+  try {
+    const response = await eventoFuturo(nota);
+    console.log(response);
+    mensaje.textContent = response;
+  } catch (error) {
+    console.log(error);
+    mensaje.textContent = error;
+  } finally {
+    console.log("Proceso terminado");
   }
-
-  return libroDiv;
 }
+// aprobacionDeCursada(4);
+// aprobacionDeCursada(4)
+// GET - POST - PUT - PATCH - DELETE
 
-rederLibros();
+// GET / DELETE(id) no requiren es de un body
+
+// POST - PUT(id) - PATCH(id) requiren un body
+
+// fecth -> PROMISE
+const config = {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    id: 1,
+    title: "Post reemplazado",
+    body: "Contenido nuevo",
+    userId: 1,
+  }),
+};
+
+// fetch("https://jsonplaceholder.typicode.com/posts", config)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+//   async await version
+// TAREA = parametrizar la funcion
+const solicitud = async () => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const data = await response.json();
+
+  console.log(data);
+};
+solicitud();

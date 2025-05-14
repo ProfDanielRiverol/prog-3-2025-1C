@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manipulación del DOM - Ejercicio 2</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
   </head>
   <body>
-    <!-- Crea una página con una lista de libros,
-  cada uno con un título y un botón "Ver detalles".
-  Al hacer clic en el botón, muestra una descripción del libro debajo del título, 
-  que puede estar almacenada en un objeto. Si se vuelve a hacer clic, oculta la descripción. -->
-    <main>
-      <section>
-        <h1>Lista de libros</h1>
-        <div class="libros-contenedor"></div>
-      </section>
-    </main>
-    <script src="./js/main.js" defer></script>
+    <h1>Asincronía</h1>
+       <div class="card hide">
+          <h2>👋​ Soy un pop-up</h2>
+          <p>Voy a desaparecer pronto! ⏳​</p>
+        </div>
+         <button type="button" class="btn btn-normal" id="btn">Click</button> 
+         <p id="mensaje"></p>
+    <script src="./js/main.js"></script>
   </body>
 </html>
