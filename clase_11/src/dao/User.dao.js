@@ -1,4 +1,5 @@
 import conn from "../config/dbConfig.js";
+import User from "./../models/User.js";
 //Data Access Object
 const UserDao = {
   async getAll() {
@@ -6,7 +7,7 @@ const UserDao = {
     console.log(await conn.query(selectQuery));
 
     const [rows] = await conn.query(selectQuery);
-    return rows;
+    return rows.map((row) => User.fromObject(row));
   },
 
   async getById(id) {
@@ -17,14 +18,38 @@ const UserDao = {
       return null;
     }
 
-    return rows[0];
+    return User.fromObject(rows[0]);
   },
 
-  async create(user) {},
+  async create(user) {
+    const insertQuery = "INSERT INTO users (nombre, email) VALUES (?, ?)";
+    const [result] = await conn.execute(insertQuery, [user.nombre, user.email]);
+    user.id = result.insertId;
+    return User.fromObject(user);
+  },
 
-  async update(id, user) {},
+  async update(id, user) {
+    const updateQuery = "UPDATE users SET nombre = ?, email = ? WHERE id = ?";
+    const [result] = await conn.execute(updateQuery, [
+      user.nombre,
+      user.email,
+      id,
+    ]);
+    if (result.affectedRows === 0) {
+      return null;
+    }
+    user.id = id;
+    return User.fromObject(user);
+  },
 
-  async delete(id) {},
+  async delete(id) {
+    const deleteQuery = "DELETE FROM users WHERE id = ?";
+    const [result] = await conn.execute(deleteQuery, [id]);
+    if (result.affectedRows === 0) {
+      return null;
+    }
+    return { id };
+  },
 };
 
 export default UserDao;
