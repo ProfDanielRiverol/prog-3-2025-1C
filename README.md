@@ -1,111 +1,53 @@
-# Plantilla de servidor con capas con Express
+# 👨‍💻 Programación 3 - 1C 2025 | UTN-FRA
 
-Este proyecto es una plantilla básica para configurar un servidor con **Express** y **Nodemon**, ideal para iniciar rápidamente nuevos desarrollos en Node.js.
+![Curso](https://img.shields.io/badge/Curso-Programaci%C3%B3n%203-blueviolet)
+![Cuatrimestre](https://img.shields.io/badge/Cuatrimestre-1C--2025-ff69b4)
+![Estado](https://img.shields.io/badge/Estado-En%20curso-green)
+![Universidad](https://img.shields.io/badge/UTN-FRA-blue)
 
-## Características
-
-- **Express** para gestionar rutas y middleware.
-- **Nodemon** para recargar automáticamente el servidor durante el desarrollo.
-- Configuración minimalista lista para usar.
-
----
-
-## Instalación
-
-### 1. Clonar el repositorio con `degit`
-
-`degit` es una herramienta para clonar plantillas de manera limpia (sin el historial de Git).
-
-#### Instalar `degit` (si no lo tienes instalado)
-
-```bash
-npm install -g degit
-```
-
-#### Clonar el repositorio
-
-```bash
-degit DanielRiverol/template-express-layers carpeta-destino
-```
-
-Reemplaza `usuario/repo-nombre` por el nombre del repositorio y `carpeta-destino` por el nombre de la carpeta donde deseas clonar el proyecto.
-
-### 2. Instalar dependencias
-
-Una vez clonado el repositorio, entra en la carpeta del proyecto:
-
-```bash
-cd carpeta-destino
-```
-
-Luego, instala las dependencias:
-
-```bash
-npm install
-```
+Bienvenidos al repositorio oficial de **Programación 3 - Primer Cuatrimestre 2025**, dictado en la **Universidad Tecnológica Nacional - Facultad Regional Avellaneda (UTN-FRA)**.  
+Acá vas a encontrar todos los ejemplos y ejercicios trabajados durante las clases.
 
 ---
 
-## Comandos disponibles
+## 📚 Contenido
 
-### Iniciar el servidor
+Este repositorio incluirá:
 
-Este comando inicia el servidor en modo desarrollo con Nodemon:
+- ✅ Ejemplos vistos clase a clase
+- 💡 Fragmentos de código para estudiar
+- 🧪 Desafíos y ejercicios prácticos
+- 🗂️ Archivos organizados por clase y tema
 
-```bash
-npm run dev
-```
-
-### Actualizar dependencias (Opcional)
-
-Para poder todas estas dependencias a su última versión, deberás instalar un paquete llamado `npm-check-updates` de forma global:
-
-```bash
-npm install -g npm-check-updates
-```
-
-Una vez instalado deberás correr el siguiente comando:
-
-```bash
-ncu -u
-```
-
-Esto modificará tu archivo package.json para que todas las dependencias estén listadas en sus últimas versiones.
-
-Una vez completado este proceso, basta con ejecutar el siguiente comando para actualizar todas tus dependencias:
-
-```bash
-npm install
-```
-
-## Estructura del proyecto
-``` plaintext
-carpeta-destino/
-├── config/                 # Configuraciones generales (DB, variables de entorno, etc.)
-│   └── db.js               # Configuración de la base de datos
-│
-├── controllers/           # Controladores: lógica que responde a las rutas
-│   └── user.controller.js
-│
-├── services/              # Servicios: lógica de negocio reutilizable
-│   └── user.service.js
-│
-├── routes/                # Definición de rutas y middlewares asociados
-│   └── user.routes.js
-│
-├── models/                # Modelos de datos (si usás MongoDB, Sequelize, etc.)
-│   └── user.model.js
-│
-├── middlewares/           # Middlewares personalizados
-│   └── auth.middleware.js
-│
-├── index.js               # Punto de entrada del servidor
-├── package.json           # Dependencias y scripts
-├── README.md              # Documentación del proyecto
-
-```
 ---
 
-## Licencia
+## 🛑 ¡Importante!
 
-Este proyecto está licenciado bajo la licencia **MIT**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
+Este repositorio **será eliminado al finalizar el cuatrimestre**, así que:
+
+> 📌 **Hacete un fork** o descargate una copia si querés conservar el material.
+
+Para hacer un fork:
+1. Hacé clic en el botón "Fork" arriba a la derecha del repo.
+2. Elegí tu cuenta personal.
+3. ¡Listo! Ya tenés tu copia segura.
+
+---
+
+## 🧑‍🏫 Sobre el curso
+
+- **Materia:** Programación 3  
+- **Universidad:** Universidad Tecnológica Nacional - Facultad Regional Avellaneda (UTN-FRA)  
+- **Año:** 2025  
+- **Cuatrimestre:** Primero  
+
+---
+
+## 📄 Licencia
+
+Este repositorio está destinado únicamente a fines educativos.  
+Podés usar, modificar y compartir el contenido libremente mientras menciones la fuente.
+
+---
+
+¡Nos vemos en clase y en el código! 🚀  
