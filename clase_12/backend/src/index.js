@@ -3,7 +3,7 @@ import { join, __dirname } from "./utils/index.js";
 import userRoutes from "./routes/user.route.js";
 import sequelize from "./config/db-sequelize.js";
 import envs from "./config/envs.js";
-
+import cors from "cors";
 
 //settings
 const app = express();
@@ -23,6 +23,12 @@ const initializeConnection = async () => {
 app.use(express.json());
 app.use(express.static(join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
+
+app.use(
+  cors({
+    origin: "http://127.0.0.1:5500",
+  })
+);
 
 //routes
 app.get("/", (req, res) => {

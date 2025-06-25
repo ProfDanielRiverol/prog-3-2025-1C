@@ -2,12 +2,15 @@
 import User from "../models/user.model.js";
 import { Op } from "sequelize";
 
-export const getUsers = async () => {
-  return await User.findAll(); //select * from users
+export const getUsers = async ({ limit = 10, offset = 0 }) => {
+  return await User.findAndCountAll({
+    limit: limit,
+    offset: offset,
+    order: [["createdAt", "DESC"]],
+  }); //select * from users
 };
 
 export const getUsersWithQuery = async (query) => {
-  console.log(query)
 
   return await User.findAll({
     where: {
