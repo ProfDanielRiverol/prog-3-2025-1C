@@ -9,9 +9,15 @@ import {
 
 export const getAllUsers = async (req, res) => {
   try {
-    const users = await getUsers();
+    let { limit, offset } = req.query;
+    limit = +limit;
+    offset = +offset;
+    const users = await getUsers({ limit, offset });
 
-    res.status(200).json({ message: "Lista de usuarios", payload: users });
+    res.status(200).json({
+      message: "Lista de usuarios",
+      payload: { limit, offset, ...users },
+    });
   } catch (error) {
     res
       .status(500)
@@ -23,9 +29,7 @@ export const getAllUsersWithQuery = async (req, res) => {
   try {
     // http://dominio.com/api/users/?lastName="Luzuri"&firstName="Ag"
     const { firstName, lastName } = req.query;
-    console.log(firstName, lastName);
     const users = await getUsersWithQuery({ firstName, lastName }); // [ {} , {}]
-    console.log(users);
     if (users.length === 0) {
       return res
         .status(404)
