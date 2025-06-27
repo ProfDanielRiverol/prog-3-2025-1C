@@ -20,4 +20,4 @@ const Image = sequelize.define("Image", {
     allowNull: false,
   },
 });
-export default User;
+export default Image;
