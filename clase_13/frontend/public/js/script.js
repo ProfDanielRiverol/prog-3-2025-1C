@@ -27,9 +27,11 @@ document
         const image = await fetch(API_URL + `images/${dataRes.payload.url}`);
         const blob = await image.blob();
         const objectURL = URL.createObjectURL(blob);
-        const imagen = `<br> <img style="width:200px" src="${objectURL}"/>`;
-
-        document.body.innerHTML += imagen;
+        const imagen = `<div class="image-preview-box">
+                          <img src="${objectURL}" />
+                        </div>`;
+        
+        document.getElementById("imageResult").innerHTML = imagen;
       }
     } catch (error) {
       //cssom
