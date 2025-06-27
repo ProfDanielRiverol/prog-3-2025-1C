@@ -8,8 +8,9 @@ body {
   font-family: "Segoe UI", sans-serif;
   background-color: #fafcff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center !important;
 }
 
 .upload-container {
@@ -114,4 +115,27 @@ input[type="file"] {
 
 .upload-button:hover {
   background-color: #1e40af;
+}
+
+#imageResult {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1.5rem;
+}
+
+.image-preview-box {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 10px;  
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
