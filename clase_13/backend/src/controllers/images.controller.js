@@ -1,19 +1,19 @@
 // controller
 import { getImages, findPk, create } from "../services/images.service.js";
 
-export const getAll = (req, res) => {
+export const getAll = async (req, res) => {
   try {
-    const images = getImages({ limit: 10, offset: 0 });
-
+    const images = await getImages({ limit: 10, offset: 0 });
+    console.log(images);
     res.status(200).json({ message: "todas las imágenes", payload: images });
   } catch (error) {}
 };
 
-export const getById = (req, res) => {
+export const getById = async (req, res) => {
   try {
     const { id } = req.params;
 
-    const image = findPk(id);
+    const image = await findPk(id);
 
     if (!image) {
       return res.status(404).json({ message: "imagen no encontrado" });
@@ -30,12 +30,13 @@ export const upload = async (req, res) => {
     }
 
     const imageUpload = await create({
-      name: file.originalname,
+      name: req.file.originalname,
       url: req.file.filename,
     });
 
     res.status(201).json({ message: "imagen creada", payload: imageUpload });
   } catch (error) {
+    console.log(error);
     res
       .status(500)
       .json({ message: "Error interno del servidor", err: error.message });

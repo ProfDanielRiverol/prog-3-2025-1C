@@ -20,15 +20,15 @@ const initializeConnection = async () => {
 };
 
 // middlewares
-app.use(express.json());
-app.use(express.static(join(__dirname, "public")));
-app.use(express.urlencoded({ extended: true }));
-
 app.use(
   cors({
-    origin: "http://127.0.0.1:5500",
+    origin: "http://localhost:5500",
   })
 );
+app.use(express.json());
+app.use(express.static(join(__dirname, ".." ,"public")));
+app.use(express.urlencoded({ extended: true }));
+
 
 //routes
 app.get("/", (req, res) => {
