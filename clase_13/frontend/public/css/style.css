@@ -96,7 +96,7 @@ input[type="file"] {
   height: 100%;
   width: 0%;
   background-color: #2563eb;
-  transition: width 0.3s ease;
+  transition: width 3s ease;
 }
 
 .upload-button {

@@ -10,12 +10,12 @@
 
 <body>
 
-  <form id="uploadForm" class="upload-container">
+  <form id="uploadForm" class="upload-container" enctype="multipart/form-data">
     <label id="dropArea" class="drop-zone">
       <img src="public/subir-imagen.png" alt="Subir imagen" class="upload-icon">
       <p class="drop-text">Arrastra un archivo aquí o <span>explora</span></p>
-      <p class="drop-subtext">Tamaño máximo: 2MB</p>
-      <input type="file" id="fileInput" name="archivo" />
+      <p class="drop-subtext">Tamaño máximo: 5MB</p>
+      <input type="file" id="fileInput" name="image" />
     </label>
 
     <div class="file-preview" id="filePreview">
@@ -70,9 +70,8 @@
       progressFill.style.width = '0%';
       progressFill.style.backgroundColor = '#2563eb';
     }
-
   </script>
-
+  <script src="/public/js/script.js"></script>
 </body>
 
 </html>
