@@ -33,7 +33,7 @@ body {
   background-color: #f6fbff;
 }
 
-.drop-zone .dragover {
+.drop-zone.dragover {
   transform: scale(1.03);
   border-color: #2563eb;
   background-color: #f6fbff;
@@ -96,7 +96,7 @@ input[type="file"] {
   height: 100%;
   width: 0%;
   background-color: #2563eb;
-  transition: width 3s ease;
+  transition: width 1s ease-in;
 }
 
 .upload-button {
