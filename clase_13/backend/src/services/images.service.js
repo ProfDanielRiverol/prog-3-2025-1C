@@ -2,7 +2,7 @@
 import Image from "../models/image.model.js";
 import { Op } from "sequelize";
 
-export const getUsers = async ({ limit = 10, offset = 0 }) => {
+export const getImages = async ({ limit = 10, offset = 0 }) => {
   return await Image.findAndCountAll({
     limit: limit,
     offset: offset,
@@ -10,8 +10,8 @@ export const getUsers = async ({ limit = 10, offset = 0 }) => {
   }); //select * from users
 };
 
-export const create = async (user) => {
-  return await Image.create(user);
+export const create = async (image) => {
+  return await Image.create(image);
 };
 
 export const findPk = async (id) => {
